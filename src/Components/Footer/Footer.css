@@ -1,0 +1,22 @@
+footer{
+  height: 20vh;
+  padding: 0 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--main-red);
+}
+footer img{
+  max-width: 175px;
+}
+footer ul{
+  display: flex;
+  flex-direction: column;
+}
+footer ul a{
+  font-size: 1.1em;
+  padding: 5px 0;
+  color:#000;
+  text-decoration: none;
+  margin: 0 20px;
+}

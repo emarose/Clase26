@@ -1,0 +1,108 @@
+
+.products-hero{
+  min-height: 100vh;
+  background-image: url(./products-bg.jpg);
+  background-position: top;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(0,0,0,0.2);
+  background-blend-mode: darken;
+  justify-content: center;
+  background-attachment: fixed;
+  text-align: center;
+}
+
+.products-hero h1{
+  color: #fff;
+  line-height: 1.5em;
+  text-shadow: var(--text-shadow)
+}
+
+.products-hero h2{
+  font-style: italic;
+  color: #fff;
+  line-height: 1.5em;
+  text-shadow: var(--text-shadow)
+}
+.card-wrapper{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.card-grid{
+  width: 75%;
+  margin: 100px auto;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  grid-auto-rows: 300px;
+  grid-template-columns: 1fr;
+}
+
+.card{
+  min-width: 16rem;
+  border-radius: 7px;
+  background-size: cover;
+  background-color: rgba(0,0,0,0.2);
+  background-blend-mode: darken;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  color:#fff;
+
+  position: relative;
+  padding: 20px;
+}
+.card-text{
+  position: absolute;
+  bottom: 20px;
+}
+.card:hover p{
+  display: visible;
+}
+.card1{
+  background-image: url("./black.jpg");
+}
+.card2{
+  background-image: url("./irish.jpg");
+}
+.card3{
+  background-image: url("./mocha.jpg");
+}
+.card4{
+  background-image: url("./frozen.jpg");
+}
+.card5{
+  background-image: url("./ristretto.jpg");
+}
+.card6{
+  background-image: url("./cream-latte.jpg");
+}
+.card7{
+  background-image: url("./ice-shot-latte.jpg");
+}
+
+.span-2{
+  grid-column: span auto;
+}
+
+@media screen and (min-width:60em) {
+  .card-grid{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width:80em) {
+  .card-grid{
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .span-2{
+    grid-column: span 2;
+  }
+}
+
+
+

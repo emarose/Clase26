@@ -1,0 +1,51 @@
+.home-bg{
+  background-attachment: fixed;
+  min-height: 100vh;
+  background-image: url(./home-bg.jpg);
+  background-position: center;
+  background-color: rgba(50,0,0,0.1);
+  background-blend-mode: darken;
+  background-size: cover;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+}
+
+.home-bg h1{
+  color: #fff;
+  line-height: 1.5em;
+  text-shadow: var(--text-shadow)
+}
+
+.home-bg h2{
+  font-style: italic;
+  color: #fff;
+  line-height: 1.5em;
+  text-shadow: var(--text-shadow)
+}
+
+.heroBtn{
+  text-decoration: none;
+  margin-top: 12rem;
+  border: none;
+  cursor: pointer;
+  line-height: 2.4;
+  padding: 0 24px;
+  border-radius: 50px;
+  min-width: 200px;
+  height: 50px;
+  font-size: 1.3rem;
+  background-color: var(--main-red);
+  font-weight: 500;
+  color: #222;
+  transition: 0.3s all;
+}
+
+.heroBtn:hover{
+  background-color: #fff;
+  color: var(--main-red);
+  border-left: 10px solid var(--main-red);
+}
